@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0; /* 네비게이션 바를 왼쪽 끝에서 시작하도록 함 */
+  right: 0; /* 네비게이션 바를 오른쪽 끝까지 확장하도록 함 */
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px 1vw; /* 좌우 패딩을 뷰포트의 너비에 따라 조정 */
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* 스크롤 바 숨기기 및 기타 스타일 유지 */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+  #app {
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* 네비게이션 바 아래로 컨텐츠가 시작되도록 여백 추가 */
+  }
+  .page {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+
+  /* 페이지별 배경색 변경 */
+  #page1 { background: #FFD700; }
+  #page2 { background: #ADFF2F; }
+  #page3 { background: #00BFFF; }
+  
